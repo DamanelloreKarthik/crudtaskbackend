@@ -2,19 +2,19 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const CrudModalSchema = new Schema({
-  amount: {
+  name: {
     type: String,
-    require: true,
+    required: true,
   },
-  startDate: {
+  designation: {
     type: String,
-    require: true,
+    required: true,
   },
-  endDate: {
+  description: {
     type: String,
-    require: true,
+    required: true,
   },
 });
 
-const crudModalSchema = mongoose.model("upcomig", CrudModalSchema);
+const crudModalSchema = mongoose.model("upcoming", CrudModalSchema);
 module.exports = crudModalSchema;
