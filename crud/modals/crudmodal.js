@@ -16,5 +16,5 @@ const CrudModalSchema = new Schema({
   },
 });
 
-const crudModalSchema = mongoose.model("upcoming", CrudModalSchema);
+const crudModalSchema = mongoose.model("crud", CrudModalSchema);
 module.exports = crudModalSchema;
